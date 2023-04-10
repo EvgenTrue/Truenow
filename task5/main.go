@@ -2,14 +2,13 @@ package main
  
 import "fmt"
  
-func factorial(n uint) uint {
-	if n == 0 {
-		return 1
-	}
-	return n * factorial(n-1)
+func main() {
 
+var a = 1
+var b int
+fmt.Scan(&b)
+for i:=1; i<=b; i++ {
+	a= i * a
 }
-
-func main(){
-	fmt.Println(factorial(5))
+fmt.Println(a)
 }
