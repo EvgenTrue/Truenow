@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var a = 10
-	var c = 0
+	var a int
+	var c int
 
 	fmt.Scan(&a)
 	for i:=1; i <= a; i++ {
-		c = i + c
-		
+		c = i + 0 
+		if i%3==0 || i%5 ==0 {
 		fmt.Println(c) 	
 		}
 		
 	} 
 	
-
+}
