@@ -5,8 +5,8 @@ import
 
 func main(){
 	fmt.Print("vvedi slovo:")
-	fmt.Scan("dobriy")
+	fmt.Scan("dog")
 	 
 	
-	fmt.Println ("yirbod")
+	fmt.Println ("god")
 }
