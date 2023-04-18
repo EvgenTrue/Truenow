@@ -9,7 +9,7 @@ func main() {
 	fmt.Scan(&a)
 
 	if a <= 10 && a%10 == 0 {
-		fmt.Fprintln(a / 10)
+		fmt.Println(a / 10)
 	}
 
 }
