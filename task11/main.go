@@ -3,25 +3,24 @@ package main
 import "fmt"
 
 func main() {
-	var a int
-	var b int
+	var a, b int
+	
 	fmt.Println("введите число")
 	fmt.Scan(&a)
-	for i := 1; i <= a; i++ {
-		for j := 1; j <= i; j++ {
+	for i := 0; i <= a; i++ {
+		
+		if i<=a/2 {
+			b++
+		}else {
+			b--
+		}
+		
+		for j := 1; j <= b; j++ {
 			fmt.Print("*")
 		}
 		fmt.Println("")
 
 	}
-	  { 
-		{
-			for i := 1; i <= b; i++ {
-				for j := 1; j <= b-i; j-- {
-					fmt.Print("*")
-				}
-				fmt.Println("")
-			}
-		}
-	}
 }
+	
+

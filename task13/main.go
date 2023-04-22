@@ -8,8 +8,14 @@ func main() {
 	fmt.Println("введите число:")
 	fmt.Scan(&a)
 
-	if a <= 10 && a%10 == 0 {
-		fmt.Println(a / 10)
+	for a > 0 {
+		fmt.Print(a % 10)
+		a /= 10
+
 	}
 
 }
+
+/// 1546
+/// %10 = 6 
+/// 154 
