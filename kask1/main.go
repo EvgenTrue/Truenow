@@ -9,22 +9,27 @@ func main(){
 
 	for i:=1; i<=a; i++{
 		
-		for j:=1; j<=a-i; j++{
+		for j:=1; j<=a/2-i; j++{
 			fmt.Print(" ")
 		}
-		if i<=a/2{
-			
+		
+		for j:=1; j>=a/2-i; j++{
+			fmt.Print(" ")
+
 		}
 		
 		for k:=1; k<=i*2-1; k++{
 			
 			fmt.Print("*")
 		}
+		if i>a/2{
+			k--
+		}
+			
 		fmt.Println("")
 		 
 
 		}
 	}
-
 
 
