@@ -6,7 +6,7 @@ import (
 func main(){
 	a:=make([]string, 0, 10)
 	a=append(a, "hello", "moon", "box", "kenny", "goat")
-	for i:= range a {
-		fmt.Println(strings.Count(a[i], "o"))
+	for _,v:= range a {
+		fmt.Println(strings.Count(v, "o"))
 	}
 }

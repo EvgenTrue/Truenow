@@ -16,18 +16,12 @@ func main() {
 
 	}
 	fmt.Println(a)
+	b := make([]int, 0, 10)
+	for _, v := range a {
+		if v%2 != 0 {
 
-	for i := len(a) - 1; i > 0; i++ {
-		if a[i]%2 == 0 {
-
-			b := make([]int, 10)
-			for _, j := range b {
-
-				b = append(b, j)
-
-				fmt.Println(j)
-			}
-
+			b = append(b, v)
 		}
 	}
+	fmt.Println(b)
 }
