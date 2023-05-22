@@ -2,14 +2,23 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
 func main(){
 
-	a:= "sdad j 2132  4 4grfrf f4 423 frv4f43"
-	ss:=strings.Split(a, " ")
-	for _,v:=range ss{
-		fmt.Println(string(v))
+	a:= "sdad j 2132 grfrf 4 423 frvkjh"
+	
+	for _, v:=range a{
 	}
-}
+	i, err := strconv.Atoi(a)
+	if err!= nil {
+		fmt.Println(a)
+	
+	}
+	 ss := strings.Split(a, "")
+     fmt.Println(ss,i)
+	 
+	}
+	
