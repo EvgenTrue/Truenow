@@ -3,22 +3,21 @@ package main
 import (
 	"fmt"
 	"strconv"
-	"strings"
+	 
 )
 
-func main(){
+func main() {
 
-	a:= "sdad j 2132 grfrf 4 423 frvkjh"
-	
-	for _, v:=range a{
+	a := "sdad j 2132 grfrf 4 423 frvkjh"
+
+	for _, v := range a {
+
+		b, err := strconv.Itoa(i,int(string(v)))
+		if err != nil {
+			continue
+
+		}
+		fmt.Println(b)
+
 	}
-	i, err := strconv.Atoi(a)
-	if err!= nil {
-		fmt.Println(a)
-	
-	}
-	 ss := strings.Split(a, "")
-     fmt.Println(ss,i)
-	 
-	}
-	
+}
