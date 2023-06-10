@@ -5,17 +5,18 @@ import "fmt"
 func main() {
 	var n int
 	var a int
-	sum :=0
+	sum := 0
 	fmt.Scan(&n)
-	
+
 	for i := 0; i <= n; i++ {
 		fmt.Scan(&a)
+		fmt.Println("a: ", a)
 		if 100 > a && a >= 10 && a%8 == 0 {
-			
+
 			sum += a
-			fmt.Println(sum)
 
 		}
+		fmt.Println("sum: ", sum)
 	}
 }
 

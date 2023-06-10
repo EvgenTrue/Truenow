@@ -12,7 +12,7 @@ func main() {
 
 	for _, v := range a {
 
-		b, err := strconv.Itoa(i,int(string(v)))
+		b, err := strconv.Atoi(i,int(string(v)))
 		if err != nil {
 			continue
 
