@@ -14,7 +14,7 @@ package main
 import (
 	"fmt"
 
-	"golang.org/x/exp/slices"
+
 )
 
 type Product struct {
@@ -36,7 +36,7 @@ func (w *Warehouse) RemoveProduct(id string) {
 	delete(w.Products, id)
 }
 
-func (w *Warehouse) UpdateProductInfo(id, name, price, quantity string) {
+func (w *Warehouse) UpdateProductInfo(id, name string, price float64, quantity int) {
 	product, exists := w.Products[id]
 	if exists {
 		product.Name = name
@@ -46,7 +46,7 @@ func (w *Warehouse) UpdateProductInfo(id, name, price, quantity string) {
 	}
 }
 
-func (w *Warehouse) GetTotalQuantity() {
+func (w *Warehouse) GetTotalQuantity()int {
 	totalQuantity := 0
 	for _, product := range w.Products {
 		totalQuantity += product.Quantity
@@ -71,10 +71,10 @@ func main() {
 
 	fmt.Println(warehouse.Products)
 
-	warehouse.UpdateProductInfo("002", "New Product Name", "24.99", "8")
+	warehouse.UpdateProductInfo("002", "New Product Name", 24.99, 8)
 
 	fmt.Println(warehouse.Products)
 
-	totalQuantity := warehouse.GetTotalQuantity(Product)
-	fmt.Println("Total quantity:", totalQuantity)
+	atotalQuantity := warehouse.GetTotalQuantity()
+	fmt.Println("Total quantity:", atotalQuantity)
 }

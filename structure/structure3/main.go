@@ -34,14 +34,10 @@ func (os *OnlineStore) UpdateOrderStatus(orderNumber int, status string) {
 	}
 }
 
-func (os *OnlineStore) GetAllOrders(Order string) {
-	allbook:=make([]Order,0,len(os.Orders))
-	for_,v:=range os.Orders{
-		fmt.Println(allallbook)
-		return  
-	}
-	
-}
+func (os *OnlineStore) GetAllOrders()[]Order {
+	return os.Orders
+  }
+
 
 func main() {
 	onlineStore := OnlineStore{}

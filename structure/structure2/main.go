@@ -46,7 +46,7 @@ func (c *Company) GetAllEmployees() []Employee {
 }
 
 func main() {
-	company := Company{}
+	company := Company{Employees: make(map[string]Employee)}
 
 	employee1 := Employee{Name: "John Doe", Age: 30, Position: "Manager"}
 	employee2 := Employee{Name: "Jane Smith", Age: 25, Position: "Developer"}

@@ -20,5 +20,6 @@ func (r Rectangle) Area()int{
 
 
 func main(){
+	s:=Rectangle{Width: 10, Height: 5}
 	fmt.Println(s)
 }

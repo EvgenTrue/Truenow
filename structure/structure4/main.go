@@ -30,23 +30,23 @@ func (u *University) RemoveStudent(id string) {
 	delete(u.Students, id)
 }
 
-func (u *University) FindStudentsBySpecialty(specialty) []Student {
+func (u *University) FindStudentsBySpecialty(specialty string) []Student {
 	var result []Student
 	for _, student := range u.Students {
-		if student.Specialty == specialty
-		result = append(result, student)
-
+		if student.Specialty == specialty{
+		result = append(result, student)	
+		} 
 	}
 	return result
 }
 
 func main() {
 	university := University{
-		Students:= make(map[string]Student)
+		Students: make(map[string]Student),
 	}
 
-	student1 = Student{Name: "John Doe", Age: 20, Specialty: "Computer Science"}
-	student2 = Student{Name: "Jane Smith", Age: 21, Specialty: "Mathematics"}
+	student1 := Student{Name: "John Doe", Age: 20, Specialty: "Computer Science"}
+	student2 := Student{Name: "Jane Smith", Age: 21, Specialty: "Mathematics"}
 
 	university.AddStudent("001", student1)
 	university.AddStudent("002", student2)
